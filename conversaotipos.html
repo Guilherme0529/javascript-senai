@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Tipos de Dados</title>
+</head>
+<body>
+    <script>
+        console.log("10" + 2);
+        console.log("10" - 2);
+        console.log("10" * 2);
+        console.log("10" / 2);
+
+        console.log("asdrubal" + 2);
+        console.log("asdrubal" / 2);
+
+        console.log("2" + "2");
+
+        let numero1 = "10.5";
+        let numero2 = 2;
+        let numero3 = "10.5";
+
+        numero1 = parseInt(numero1);
+
+        let soma = numero1 + numero2;
+        let subtracao = numero1 - numero2;
+        let multiplicacao = numero1 * numero2;
+        let divisao = numero1 / numero2;
+
+        console.log("Soma com conversão: " + soma);
+        console.log("Subtração: " + subtracao);
+        console.log("Multiplicação: " + multiplicacao);
+        console.log("Divisão: " + divisao);
+
+        numero3 = parseFloat(numero3);
+        console.log(numero3);
+        console.log(numero3 + numero2);
+
+        let entrada1 = prompt("Digite o primeiro numero:");
+        let entrada2 = prompt("Digite o segundo numero:");
+
+        let resultado1 = entrada1 + entrada2;
+        console.log("Resultado da operação: " + resultado1);
+
+        let resultado2 = parseInt(entrada1) + parseInt(entrada2);
+        console.log("Resultado da operação: " + resultado2);
+    </script>
+</body>
+</html>

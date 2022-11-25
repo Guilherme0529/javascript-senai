@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+    <link rel="stylesheet" href="css/botao.css">
+    <style>
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <img id="minhaImagem">
+    <br>
+    <button type="button" onclick="mostrarImagem(0)">Olá Jovem...</button>
+    <button type="button" onclick="mostrarImagem(1)">Me conte mais...</button>
+    <button type="button" onclick="mostrarImagem(2)">Que bom...</button>
+
+    <script>
+        function mostrarImagem(opcao) {
+            let imagem = "";
+            let corFundo = "";
+
+            if (opcao == 0) {
+                imagem = "img/kermit0.jpg";
+                corFundo = "#1abc9c";
+            } else if (opcao == 1) {
+                imagem = "img/kermit1.jpg";
+                corFundo = "#ff6f69";
+            } else {
+                imagem = "img/kermit2.jpg";
+                corFundo = "#1e90ff";
+            }
+
+            document.getElementById("minhaImagem").src = imagem;
+            document.querySelector("body").style.backgroundColor = corFundo;
+        }
+    </script>
+</body>
+</html>

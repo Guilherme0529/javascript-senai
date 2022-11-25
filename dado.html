@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Dado</title>
+    <link rel="stylesheet" href="css/botao.css">
+    <style>
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" onclick="jogar()">Jogar</button>
+    <br><br>
+    <img id="dado">
+    <script>
+        function jogar() {
+            let imagem = "";
+            let sorteio = Math.floor(Math.random() * 6 + 1);
+
+            if (sorteio == 1) {
+                imagem = "img/lado1.png";
+            } else if (sorteio == 2) {
+                imagem = "img/lado2.png";
+            } else if (sorteio == 3) {
+                imagem = "img/lado3.png";
+            } else if (sorteio == 4) {
+                imagem = "img/lado4.png";
+            } else if (sorteio == 5) {
+                imagem = "img/lado5.png";
+            } else if (sorteio == 6) {
+                imagem = "img/lado6.png";
+            }
+
+            document.getElementById("dado").src = imagem;
+        }
+    </script>
+</body>
+</html>

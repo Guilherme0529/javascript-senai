@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar</title>
+</head>
+<body>
+    <script>
+        function somar(num1, num2) {
+            return num1 + num2;
+        }
+
+        function parOuImpar(valor) {
+            if (valor % 2 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        let numero1 = prompt("Digite o numero 1:");
+        let numero2 = prompt("Digite o numero 2:");
+
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);
+
+        let resultado = somar(numero1, numero2);
+        document.write("A soma é " + resultado);
+
+        document.write("<br>");
+
+        if (parOuImpar(resultado)) {
+            document.write("O resultado da soma é PAR.");
+        } else {
+            document.write("O resultado da soma é IMPAR.");
+        }
+    </script>
+</body>
+</html>

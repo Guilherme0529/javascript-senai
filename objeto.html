@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto</title>
+</head>
+<body>
+    <script>
+        let carro = {
+            numeroPortas: 3,
+            numeroRodas: 4,
+            anoFabricacao: 2010,
+            fabricante: "Porsche",
+            manual: true,
+            estado: false,
+            ligar: function() {
+                this.estado = true;
+                console.log("Ligando o carro...");
+            },
+            desligar: function() {
+                this.estado = false;
+                console.log("Desligando o carro...");
+            },
+            informacoes: function() {
+                console.log(this.fabricante + " " + this.anoFabricacao);
+            },
+            exibirEstado: function() {
+                if (this.estado) {
+                    console.log("O carro esta ligado.");
+                } else {
+                    console.log("O carro esta desligado");
+                }
+            }
+        };
+
+        console.log(carro.fabricante);
+        console.log(carro.numeroPortas);
+        console.log(carro.anoFabricacao);
+
+        carro.anoFabricacao = 2016;
+
+        console.log(carro.anoFabricacao);
+
+        carro.exibirEstado();
+        carro.ligar();
+        carro.exibirEstado();
+        carro.desligar();
+        carro.exibirEstado();
+        carro.informacoes();
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <script>
+        let numero = 10;
+        let resultado = false;
+
+        resultado = (numero > 5) && (numero < 15);
+        console.log(resultado);
+
+        resultado = (numero > 0) && (numero < 10);
+        console.log(resultado);
+
+        let numero2 = 50;
+        let resultado2 = false;
+        
+        resultado2 = (numero2 > 100) || (numero2 <= 50);
+        console.log(resultado2);
+
+        resultado2 = (numero2 > 100) || (numero2 > 200);
+        console.log(resultado2);
+
+        let numero3 = 50;
+        let resultado3 = false;
+
+        resultado3 = !(numero3 == 50);
+        console.log(resultado3);
+
+        resultado3 = !(numero3 != 50);
+        console.log(resultado3);
+
+        let examePsicotecnico = true;
+        let exameTeorico = true;
+        let examePratico = true;
+
+        let resultado4 = examePsicotecnico && exameTeorico && examePratico;
+        console.log("Voce tirou a CNH: " + resultado4);
+
+        let idoso = true;
+        let pessoaComDeficiencia = false;
+        let gestante = false;
+
+        let resultado5 = idoso || pessoaComDeficiencia || gestante;
+        console.log("Voce pode pegar a fila preferencial: " + resultado5);
+
+        let renda = 2000;
+
+        let resultado6 = !(renda > 2000);
+        console.log("Voce pode receber a ajuda de custo: " + resultado6);
+    </script>
+</body>
+</html>

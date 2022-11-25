@@ -1,0 +1,22 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+body {
+    background-image: url('../img/backgroundmar.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#logo {
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+strong {
+    font-size: 30px;
+}

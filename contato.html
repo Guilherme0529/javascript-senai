@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+    <main>
+        <section>
+            <article class="titulo">
+                <h2>Contato</h2>
+            </article>
+        </section>
+        <section>
+            <form method="post" action="http://10.87.230.63/servidor/" 
+                onsubmit="return validar()">
+                
+                <label>Nome:</label>
+                <span class="erro" id="erroNome">
+                    Informe seu nome
+                </span>
+                <input type="text" id="nome" name="fnome">
+
+                <label>Email:</label>
+                <span class="erro" id="erroEmail">
+                    Informe seu email
+                </span>
+                <input type="email" id="email" name="femail">
+
+                <label>Avaliação:</label>
+                <span class="erro" id="erroAval">
+                    Avaliação invalida
+                </span>
+                <input type="number" id="aval" name="faval">
+
+                <label>Data:</label>
+                <input type="date" id="data" name="fdata">
+
+                <label>Tipo:</label>
+                <select id="tipo" name="ftipo">
+                    <option>Elogio</option>
+                    <option>Reclamação</option>
+                    <option>Duvida</option>
+                    <option>Sugestão</option>
+                    <option>Outro</option>
+                </select>
+
+                <label>Assunto:</label>
+                <input type="text" id="assunto" name="fassunto">
+
+                <label>Mensagem:</label>
+                <textarea id="mens" name="fmens"></textarea>
+
+                <input type="checkbox" id="aceite" name="faceite">
+                <label for="aceite">Aceito os termos de condição</label>
+                <span class="erro" id="erroAceite">
+                    É necessario aceitar para continuar
+                </span>
+                <br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset" onclick="limpar()">Limpar</button>
+            </form>
+        </section>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117694.89519421474!2d-47.5062239199959!3d-22.803743154739085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89db1cf098daf%3A0xf2a349351902f3b0!2sSanta%20B%C3%A1rbara%20d&#39;Oeste%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1668893488175!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
